@@ -1,0 +1,53 @@
+{
+  "name": "pushlog",
+  "version": "0.1.0",
+  "description": "Lists the commits you made across every git repo on your machine, and whether each was pushed",
+  "keywords": [
+    "cli",
+    "git",
+    "commits",
+    "standup",
+    "daily",
+    "unpushed",
+    "report"
+  ],
+  "license": "MIT",
+  "author": "Felipe Vasconcelos",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/favasconcelos/pushlog.git"
+  },
+  "homepage": "https://github.com/favasconcelos/pushlog#readme",
+  "bugs": {
+    "url": "https://github.com/favasconcelos/pushlog/issues"
+  },
+  "type": "module",
+  "bin": {
+    "pushlog": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "commander": "15.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@types/node": "26.6.5",
+    "tsup": "8.5.1",
+    "typescript": "7.0.2",
+    "vitest": "5.0.4"
+  },
+  "packageManager": "npm@11.19.0"
+}
